@@ -1,0 +1,8 @@
+<resources>
+    <array name="my_gradient">
+        <item>#FFFF0000</item> <!-- red -->
+        <item>#FF00FF00</item> <!-- green -->
+        <item>#FF0000FF</item> <!-- blue -->
+        <item>#FFFFFF00</item> <!-- yellow -->
+    </array>
+</resources>
