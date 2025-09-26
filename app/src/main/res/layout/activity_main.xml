@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:clipChildren="false"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <com.bs.flexi.FlexiView
+            android:id="@+id/flexiBox"
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+            android:layout_marginBottom="15dp"
+            app:borderColor="@android:color/black"
+            app:borderGradientColors="@array/my_gradient"
+            app:borderType="fill"
+            app:borderWidth="6dp"
+            app:cornerRadius="16dp"
+            app:fillColor="@android:color/holo_blue_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SectionLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Border Controls" />
+
+            <Button
+                android:id="@+id/btnToggleBorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="8dp"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/borderControlsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/FieldLabel"
+                android:text="Border Width" />
+
+            <SeekBar
+                android:id="@+id/sliderBorderWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="50" />
+
+            <TextView
+                android:id="@+id/tvBorderWidth"
+                style="@style/LiveValueLabel"
+                android:text="Border Width: 0.0 dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnBorderType"
+                style="@style/ColorButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FILL" />
+
+            <Button
+                android:id="@+id/btnBorderAnim"
+                style="@style/ColorButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OFF" />
+
+            <TextView
+                style="@style/FieldLabel"
+                android:text="Border Color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <Button
+                    android:id="@+id/btnBorderBlack"
+                    style="@style/ColorButton"
+                    android:text="Black" />
+
+                <Button
+                    android:id="@+id/btnBorderRed"
+                    style="@style/ColorButton"
+                    android:text="Red" />
+
+                <Button
+                    android:id="@+id/btnBorderGreen"
+                    style="@style/ColorButton"
+                    android:text="Green" />
+
+                <Button
+                    android:id="@+id/btnBorderBlue"
+                    style="@style/ColorButton"
+                    android:text="Blue" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SectionLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Corner Radius" />
+
+            <Button
+                android:id="@+id/btnToggleCorner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="8dp"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cornerControlsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/FieldLabel"
+                android:text="All Corners" />
+
+            <SeekBar
+                android:id="@+id/sliderCorner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100" />
+
+            <TextView
+                style="@style/FieldLabel"
+                android:text="Top Left" />
+
+            <SeekBar
+                android:id="@+id/sliderTopLeft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100" />
+
+            <TextView
+                style="@style/FieldLabel"
+                android:text="Top Right" />
+
+            <SeekBar
+                android:id="@+id/sliderTopRight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100" />
+
+            <TextView
+                style="@style/FieldLabel"
+                android:text="Bottom Left" />
+
+            <SeekBar
+                android:id="@+id/sliderBottomLeft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100" />
+
+            <TextView
+                style="@style/FieldLabel"
+                android:text="Bottom Right" />
+
+            <SeekBar
+                android:id="@+id/sliderBottomRight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SectionLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Shadow Controls" />
+
+            <Button
+                android:id="@+id/btnToggleShadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="8dp"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shadowControlsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/FieldLabel"
+                android:text="Blur" />
+
+            <SeekBar
+                android:id="@+id/sliderShadowBlur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="60" />
+
+            <TextView
+                android:id="@+id/tvShadowBlur"
+                style="@style/LiveValueLabel"
+                android:text="Shadow Blur: 0.0 dp"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/FieldLabel"
+                android:text="Spread" />
+
+            <SeekBar
+                android:id="@+id/sliderShadowSpread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="60" />
+
+            <TextView
+                android:id="@+id/tvShadowSpread"
+                style="@style/LiveValueLabel"
+                android:text="Shadow Spread: 0.0 dp"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/FieldLabel"
+                android:text="Offset X" />
+
+            <SeekBar
+                android:id="@+id/sliderShadowOffsetX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="200" />
+
+            <TextView
+                android:id="@+id/tvShadowOffsetX"
+                style="@style/LiveValueLabel"
+                android:text="Shadow Offset X: 0.0 dp"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/FieldLabel"
+                android:text="Offset Y" />
+
+            <SeekBar
+                android:id="@+id/sliderShadowOffsetY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="200" />
+
+            <TextView
+                android:id="@+id/tvShadowOffsetY"
+                style="@style/LiveValueLabel"
+                android:text="Shadow Offset Y: 0.0 dp"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/FieldLabel"
+                android:text="Shadow Color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <Button
+                    android:id="@+id/btnShadowBlack"
+                    style="@style/ColorButton"
+                    android:text="Black" />
+
+                <Button
+                    android:id="@+id/btnShadowRed"
+                    style="@style/ColorButton"
+                    android:text="Red" />
+
+                <Button
+                    android:id="@+id/btnShadowBlue"
+                    style="@style/ColorButton"
+                    android:text="Blue" />
+
+                <Button
+                    android:id="@+id/btnShadowGreen"
+                    style="@style/ColorButton"
+                    android:text="Green" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SectionLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fill Controls" />
+
+            <Button
+                android:id="@+id/btnToggleFill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="8dp"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fillControlsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/btnFillSolid"
+                    style="@style/ColorButton"
+                    android:text="Solid" />
+
+                <Button
+                    android:id="@+id/btnFillLinear"
+                    style="@style/ColorButton"
+                    android:text="Linear" />
+
+                <Button
+                    android:id="@+id/btnFillRadial"
+                    style="@style/ColorButton"
+                    android:text="Radial" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

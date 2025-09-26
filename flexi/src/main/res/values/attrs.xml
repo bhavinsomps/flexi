@@ -1,0 +1,172 @@
+<resources>
+    <attr name="fillType" format="enum">
+        <enum name="solid" value="0" />
+        <enum name="linear" value="1" />
+        <enum name="radial" value="2" />
+    </attr>
+    <attr name="fillColor" format="color" />
+    <attr name="fillGradientStartColor" format="color" />
+    <attr name="fillGradientCenterColor" format="color" />
+    <attr name="fillGradientEndColor" format="color" />
+    <attr name="fillGradientAngle" format="float" />
+
+    <attr name="borderType" format="enum">
+        <enum name="none" value="0" />
+        <enum name="fill" value="1" />
+        <enum name="gradient" value="2" />
+    </attr>
+    <attr name="borderWidth" format="dimension" />
+    <attr name="borderColor" format="color" />
+    <attr name="borderGradientColors" format="reference" />
+    <attr name="borderAnimation" format="boolean" />
+    <attr name="borderAnimationSpeed" format="integer" />
+    <attr name="borderAnimationDirection" format="enum">
+        <enum name="clockwise" value="0" />
+        <enum name="anticlockwise" value="1" />
+    </attr>
+
+    <attr name="cornerRadius" format="dimension" />
+    <attr name="cornerRadiusTopLeft" format="dimension" />
+    <attr name="cornerRadiusTopRight" format="dimension" />
+    <attr name="cornerRadiusBottomRight" format="dimension" />
+    <attr name="cornerRadiusBottomLeft" format="dimension" />
+
+    <attr name="flexiShadowColor" format="color" />
+    <attr name="flexiShadowOffsetX" format="dimension" />
+    <attr name="flexiShadowOffsetY" format="dimension" />
+    <attr name="flexiShadowBlur" format="dimension" />
+    <attr name="flexiShadowSpread" format="dimension" />
+
+    <declare-styleable name="Flexi">
+        <attr name="fillType" />
+        <attr name="fillColor" />
+        <attr name="fillGradientStartColor" />
+        <attr name="fillGradientCenterColor" />
+        <attr name="fillGradientEndColor" />
+        <attr name="fillGradientAngle" />
+
+        <attr name="borderType" />
+        <attr name="borderWidth" />
+        <attr name="borderColor" />
+        <attr name="borderGradientColors" />
+        <attr name="borderAnimation" />
+        <attr name="borderAnimationSpeed" />
+        <attr name="borderAnimationDirection" />
+
+        <attr name="cornerRadius" />
+        <attr name="cornerRadiusTopLeft" />
+        <attr name="cornerRadiusTopRight" />
+        <attr name="cornerRadiusBottomRight" />
+        <attr name="cornerRadiusBottomLeft" />
+
+        <attr name="flexiShadowColor" />
+        <attr name="flexiShadowOffsetX" />
+        <attr name="flexiShadowOffsetY" />
+        <attr name="flexiShadowBlur" />
+        <attr name="flexiShadowSpread" />
+    </declare-styleable>
+
+    <declare-styleable name="FlexiView">
+        <attr name="fillType" />
+        <attr name="fillColor" />
+        <attr name="fillGradientStartColor" />
+        <attr name="fillGradientCenterColor" />
+        <attr name="fillGradientEndColor" />
+        <attr name="fillGradientAngle" />
+        <attr name="borderType" />
+        <attr name="borderWidth" />
+        <attr name="borderColor" />
+        <attr name="borderGradientColors" />
+        <attr name="borderAnimation" />
+        <attr name="borderAnimationSpeed" />
+        <attr name="borderAnimationDirection" />
+        <attr name="cornerRadius" />
+        <attr name="cornerRadiusTopLeft" />
+        <attr name="cornerRadiusTopRight" />
+        <attr name="cornerRadiusBottomRight" />
+        <attr name="cornerRadiusBottomLeft" />
+        <attr name="flexiShadowColor" />
+        <attr name="flexiShadowOffsetX" />
+        <attr name="flexiShadowOffsetY" />
+        <attr name="flexiShadowBlur" />
+        <attr name="flexiShadowSpread" />
+    </declare-styleable>
+
+    <declare-styleable name="FlexiTextView">
+        <attr name="fillType" />
+        <attr name="fillColor" />
+        <attr name="fillGradientStartColor" />
+        <attr name="fillGradientCenterColor" />
+        <attr name="fillGradientEndColor" />
+        <attr name="fillGradientAngle" />
+        <attr name="borderType" />
+        <attr name="borderWidth" />
+        <attr name="borderColor" />
+        <attr name="borderGradientColors" />
+        <attr name="borderAnimation" />
+        <attr name="borderAnimationSpeed" />
+        <attr name="borderAnimationDirection" />
+        <attr name="cornerRadius" />
+        <attr name="cornerRadiusTopLeft" />
+        <attr name="cornerRadiusTopRight" />
+        <attr name="cornerRadiusBottomRight" />
+        <attr name="cornerRadiusBottomLeft" />
+        <attr name="flexiShadowColor" />
+        <attr name="flexiShadowOffsetX" />
+        <attr name="flexiShadowOffsetY" />
+        <attr name="flexiShadowBlur" />
+        <attr name="flexiShadowSpread" />
+    </declare-styleable>
+
+    <declare-styleable name="FlexiEditText">
+        <attr name="fillType" />
+        <attr name="fillColor" />
+        <attr name="fillGradientStartColor" />
+        <attr name="fillGradientCenterColor" />
+        <attr name="fillGradientEndColor" />
+        <attr name="fillGradientAngle" />
+        <attr name="borderType" />
+        <attr name="borderWidth" />
+        <attr name="borderColor" />
+        <attr name="borderGradientColors" />
+        <attr name="borderAnimation" />
+        <attr name="borderAnimationSpeed" />
+        <attr name="borderAnimationDirection" />
+        <attr name="cornerRadius" />
+        <attr name="cornerRadiusTopLeft" />
+        <attr name="cornerRadiusTopRight" />
+        <attr name="cornerRadiusBottomRight" />
+        <attr name="cornerRadiusBottomLeft" />
+        <attr name="flexiShadowColor" />
+        <attr name="flexiShadowOffsetX" />
+        <attr name="flexiShadowOffsetY" />
+        <attr name="flexiShadowBlur" />
+        <attr name="flexiShadowSpread" />
+    </declare-styleable>
+
+    <declare-styleable name="FlexiConstraintLayout">
+        <attr name="fillType" />
+        <attr name="fillColor" />
+        <attr name="fillGradientStartColor" />
+        <attr name="fillGradientCenterColor" />
+        <attr name="fillGradientEndColor" />
+        <attr name="fillGradientAngle" />
+        <attr name="borderType" />
+        <attr name="borderWidth" />
+        <attr name="borderColor" />
+        <attr name="borderGradientColors" />
+        <attr name="borderAnimation" />
+        <attr name="borderAnimationSpeed" />
+        <attr name="borderAnimationDirection" />
+        <attr name="cornerRadius" />
+        <attr name="cornerRadiusTopLeft" />
+        <attr name="cornerRadiusTopRight" />
+        <attr name="cornerRadiusBottomRight" />
+        <attr name="cornerRadiusBottomLeft" />
+        <attr name="flexiShadowColor" />
+        <attr name="flexiShadowOffsetX" />
+        <attr name="flexiShadowOffsetY" />
+        <attr name="flexiShadowBlur" />
+        <attr name="flexiShadowSpread" />
+    </declare-styleable>
+</resources>
