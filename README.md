@@ -57,7 +57,7 @@ repositories {
 ### Basic Border Setup
 
 ```xml
-<com.demonuts.cleanproject.utils.flexi.FlexiView
+<com.bs.flexi.FlexiView
     android:layout_width="200dp"
     android:layout_height="100dp"
     app:borderWidth="4dp"
@@ -84,7 +84,7 @@ First, create a colors array in `res/values/arrays.xml`:
 Then use in your layout:
 
 ```xml
-<com.demonuts.cleanproject.utils.flexi.FlexiView
+<com.bs.flexi.FlexiView
     android:layout_width="200dp"
     android:layout_height="100dp"
     app:borderType="gradient"
@@ -99,7 +99,7 @@ Then use in your layout:
 ### Individual Corner Radius
 
 ```xml
-<com.demonuts.cleanproject.utils.flexi.FlexiTextView
+<com.bs.flexi.FlexiTextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="Custom Corners"
@@ -113,7 +113,7 @@ Then use in your layout:
 ### Linear Gradient Fill
 
 ```xml
-<com.demonuts.cleanproject.utils.flexi.FlexiView
+<com.bs.flexi.FlexiView
     android:layout_width="match_parent"
     android:layout_height="200dp"
     app:fillType="linear"
@@ -126,7 +126,7 @@ Then use in your layout:
 ### Radial Gradient Fill
 
 ```xml
-<com.demonuts.cleanproject.utils.flexi.FlexiView
+<com.bs.flexi.FlexiView
     android:layout_width="200dp"
     android:layout_height="200dp"
     app:fillType="radial"
@@ -138,16 +138,25 @@ Then use in your layout:
 ### Shadow Effects
 
 ```xml
-<com.demonuts.cleanproject.utils.flexi.FlexiView
-    android:layout_width="150dp"
-    android:layout_height="100dp"
-    app:fillColor="#FFFFFF"
-    app:flexiShadowColor="#33000000"
-    app:flexiShadowOffsetX="8dp"
-    app:flexiShadowOffsetY="8dp"
-    app:flexiShadowBlur="12dp"
-    app:flexiShadowSpread="2dp"
-    app:cornerRadius="12dp" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <com.bs.flexi.FlexiView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:fillColor="#FFFFFF"
+        app:flexiShadowColor="#33000000"
+        app:flexiShadowOffsetX="8dp"
+        app:flexiShadowOffsetY="8dp"
+        app:flexiShadowBlur="12dp"
+        app:flexiShadowSpread="2dp"
+        app:cornerRadius="12dp" />
+
+</LinearLayout>
 ```
 
 ## Available Attributes
