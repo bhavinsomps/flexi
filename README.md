@@ -222,4 +222,4 @@ Then use in your layout:
 
 ***
 
-**Star this repo if you find it helpful!** ⭐
+**Star this repo if you find it helpful!** ⭐ 
