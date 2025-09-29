@@ -9,7 +9,7 @@ A powerful and flexible Kotlin library that provides extensive customization opt
   <img src="https://github.com/bhavinsomps/flexi/blob/main/demo_corner.gif?raw=true" width="45%"/>
 </p>
 <p align="center">
-  <img src="https://github.com/bhavinsomps/flexi/blob/main/demo_fill.gif?raw=true" width="45%"/>
+  <img src="https://github.com/bhavinsomps/flexi/blob/main/demo_fill_type.gif?raw=true" width="45%"/>
   <img src="https://github.com/bhavinsomps/flexi/blob/main/demo_shadow.gif?raw=true" width="45%"/>
 </p>
 
