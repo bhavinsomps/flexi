@@ -2,10 +2,20 @@
 
 A powerful and flexible Kotlin library that provides extensive customization options for Android views with beautiful borders, gradients, shadows, and corner radius effects.
 
+## Demo Showcase
+
+<p align="center">
+  <img src="https://github.com/bhavinsomps/flexi/blob/main/demo_border.gif?raw=true" width="45%"/>
+  <img src="https://github.com/bhavinsomps/flexi/blob/main/demo_corner.gif?raw=true" width="45%"/>
+</p>
+<p align="center">
+  <img src="https://github.com/bhavinsomps/flexi/blob/main/demo_fill.gif?raw=true" width="45%"/>
+  <img src="https://github.com/bhavinsomps/flexi/blob/main/demo_shadow.gif?raw=true" width="45%"/>
+</p>
+
 ## Features
 
 ### Border Customization
-![Border Demo](https://github.com/bhavinsomps/flexi/blob/main/demo_border.gif?raw=true)
 - **Width Control** - Set custom border widths
 - **Color Options** - Solid colors or gradient borders
 - **Gradient Borders** - Multi-color gradients with intelligent distribution
