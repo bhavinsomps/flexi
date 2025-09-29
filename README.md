@@ -5,6 +5,7 @@ A powerful and flexible Kotlin library that provides extensive customization opt
 ## Features
 
 ### Border Customization
+![Border Demo](https://github.com/<bhavinsomps>/<flexi>/blob/main/demo_border.gif?raw=true)
 - **Width Control** - Set custom border widths
 - **Color Options** - Solid colors or gradient borders
 - **Gradient Borders** - Multi-color gradients with intelligent distribution
